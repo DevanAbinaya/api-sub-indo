@@ -159,7 +159,7 @@ app.get("/source/:id", async (req, res) => {
   }
 
   // The URL of the website containing the quality links
-  const url = `${baseUrl}/$${id}/`; // Replace with the actual URL
+  const url = `${baseUrl}/${id}/`; // Replace with the actual URL
 
   // Parse the HTML content with Cheerio
   const { data } = await axios.get(url);
